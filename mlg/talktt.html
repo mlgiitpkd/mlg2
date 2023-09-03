@@ -30,6 +30,34 @@
     <link href="css/flexslider.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 <style>
+
+
+      /* Define the container for the scrolling text */
+  .scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* Define the style for the scrolling text */
+  .scrolling-text {
+    display: inline-block;
+    animation: scrollText 13s linear infinite; /* Adjust the animation duration as needed */
+    color: red; 
+    font-weight: Bold; 
+    font-style: italic;
+  }
+
+  /* Define the keyframes for the scrolling animation */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Start offscreen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Scroll to the left */
+    }
+  }
+
     /* Add your custom CSS styles here */
 
     /* Logo Section */
@@ -100,6 +128,12 @@
     </div>
     </section>
   
+
+    <div class="scrolling-text-container">
+            <a href="https://zoom.us/j/92885815960" target="_blank" class="scrolling-text">Upcoming Talk - Dr. Pratiti Bhadra, Professor Amrita University, September 2023, click here</a>
+
+    <!-- <span class="scrolling-text">Upcoming Talk - Dr. Pratiti Bhadra, Professor Amrita University, September 2023, click here</span> -->
+  </div>
 
     <section id="portfolio">
         <div class="container">
