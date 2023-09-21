@@ -351,7 +351,7 @@ color: #141414;
 .media.service-box:hover .pull-left > i {  
 }
 #portfolio {
-  padding: 140px 0;
+  padding: 0px 0;
 }
 #portfolio .portfolio-filter {
   list-style: none;
@@ -372,7 +372,7 @@ color: #141414;
 }
 #portfolio .portfolio-filter > li a:hover,
 #portfolio .portfolio-filter > li a.active {
-  background: #12AAFF;
+  #background: #12AAFF;
   color: #FFFFFF; 
 } 
 #portfolio .portfolio-items {

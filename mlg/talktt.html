@@ -29,73 +29,87 @@
     <link href="css/jcarousel.css" rel="stylesheet" />
     <link href="css/flexslider.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-<style>
-
-
-      /* Define the container for the scrolling text */
-
-
-          .centered-text {
-                color: #fff;
-                margin: 30px 0 3px;
-                display: inline-block;
-                text-align: center;
-                text-indent: 250px;
+ <!-- Include your CSS code here -->
+    <style>
+        .portfolio-filter {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #f0f0f0; /* Background color for the tabs */
+            align-items: center;
+            text-align: center;
+            margin-bottom: 1px; 
         }
-            
-  .scrolling-text-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
 
-  /* Define the style for the scrolling text */
-  .scrolling-text {
-    display: inline-block;
-    animation: scrollText 13s linear infinite; /* Adjust the animation duration as needed */
-    color: red; 
-    font-weight: Bold; 
-    font-style: italic;
-  }
+        .portfolio-filter li {
+            margin-right: 10px;
+        }
 
-  /* Define the keyframes for the scrolling animation */
-  @keyframes scrollText {
-    0% {
-      transform: translateX(100%); /* Start offscreen to the right */
-    }
-    100% {
-      transform: translateX(-100%); /* Scroll to the left */
-    }
-  }
+        .portfolio-filter a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff; /* Text color for the active tab */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
 
-    /* Add your custom CSS styles here */
+        .portfolio-filter a:hover {
+            background-color: #555; /* Background color for the tab on hover */
+        }
 
-    /* Logo Section */
-    #logo-section {
-      background-color: #ffffff;
-      padding: 10px 0;
-      text-align: center;
-    }
+        /* Define the container for the scrolling text */
+        .centered-text {
+            color: #fff;
+            margin: 30px 0 3px;
+            display: inline-block;
+            text-align: center;
+            text-indent: 250px;
+        }
 
-    .logo-images {
-      margin-top: 1px;
-    }
+        .scrolling-text-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 1px;
+        }
 
-    .logo-images img {
-      width: 200px;
-      height: 70px;
-      margin: 2px;
+        /* Define the style for the scrolling text */
+        .scrolling-text {
+            display: inline-block;
+            animation: scrollText 13s linear infinite; /* Adjust the animation duration as needed */
+            color: red;
+            font-weight: Bold;
+            font-style: italic;
+        }
 
+        /* Define the keyframes for the scrolling animation */
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%); /* Start offscreen to the right */
+            }
+            100% {
+                transform: translateX(-100%); /* Scroll to the left */
+            }
+        }
 
+        /* Logo Section */
+        #logo-section {
+            background-color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
+        .logo-images {
+            margin-top: 1px;
+        }
 
-
-    /* Additional CSS styles for other elements can be added here */
-
-
-
-
-  </style>
+        .logo-images img {
+            width: 200px;
+            height: 70px;
+            margin: 2px;
+        }
+    </style>
 
 
 </head> 
@@ -137,6 +151,8 @@
         <div class="col-lg-12">
             <h2 class="centered-text" >Florence Nightingale Data Science Talk Series</h2>
 
+
+
         </div>
 
         </div>
@@ -157,20 +173,148 @@
 
 
     <section id="portfolio">
+<div style="text-align: justify-all; padding: 50px;">
+    <p class="centered-text"><i>Welcome to the Florence Nightingale Data Science Talk Series, proudly organized by the Machine Learning Group at IIT Palakkad.
+
+Our talk series is a monthly rendezvous that takes place every last Saturday of the month at 11 AM. We bring together the brightest minds and eminent speakers from diverse domains within the realm of Artificial Intelligence (AI), Deep Learning (DL), and Machine Learning (ML).
+
+Each month, we feature distinguished researchers from renowned institutions such as Google, various IITs across India, Samsung, Mathlab, and more. These experts will delve into the latest trends, breakthroughs, and innovations in the world of data science, sharing their invaluable insights and knowledge.
+
+
+Stay tuned for our upcoming sessions and mark your calendar for the last Saturday of each month. Don't miss the opportunity to connect with thought leaders, expand your knowledge, and be a part of the data science revolution.
+
+Come, be a part of Florence Nightingale Data Science Talk Series, where data meets innovation and knowledge knows no bounds.
+
+</i></p>
+</div>
+
+
+
+
         <div class="container">
+
  
 
             <div class="text-center">
                 <ul class="portfolio-filter">
                     <li><a class="active" href="#" data-filter="*">All </a></li>
+                    <li><a href="#" data-filter=".upcoming">Upcoming</a></li>
+                    <li><a href="#" data-filter=".previous">Previous</a></li><br>
+                    <li><a href="#" data-filter=".2024">2024</a></li>
                     <li><a href="#" data-filter=".designing">2023</a></li>
                     <li><a href="#" data-filter=".mobile">2022</a></li>
                     <li><a href="#" data-filter=".development">2021</a></li>
+                    
                 </ul><!--/#portfolio-filter-->
             </div>
 
-            <div class="portfolio-items">
-                <div class="portfolio-item designing">
+            <div class="portfolio-items ">
+
+
+
+
+
+
+                                <div class="portfolio-item 2024 upcoming">
+                            <div class="portfolio-item-inner">
+                                <img class="img-responsive" src="images/portfolio/sarmistha.jpg" alt="">
+                                <font color="white"><b>Dr. Sarmistha Singh</b></font>
+                                <font color="#e6dabc"><i style="font-weight: normal;"><br>IIT Palakad</i></font>
+
+                                <span class="additional-info"  style="color: white; line-height: 0.8;"> <br> <a>Date : 24 February 2024</a></span>
+
+                                <div class="portfolio-info">
+                                    <h6  style="color: white;"> Assistant Professor</h6>
+                                    IIT Palakad
+        <a class="preview" href="images/portfolio/sarmistha.jpg" rel="prettyPhoto" title="
+                                                                                                                   <div style='text-align: center;'>
+            <span style='color: green;'>Research Areas : Climatic Oscillation and Climate Change Impacts Study 
+
+
+        </span>
+          </div>
+          <h3 style='text-align: center;'>Title: --</h3>
+          <br>
+        No Text
+
+
+
+        "><i class="fa fa-eye" src="images/portfolio/sarmistha.jpg" alt="Image Description" width="10" height="10"></i></a>
+                                </div>
+                            </div>
+                        </div><!--/.portfolio-item-->
+
+
+
+
+
+
+                <div class="portfolio-item 2024 upcoming">
+                            <div class="portfolio-item-inner">
+                                <img class="img-responsive" src="images/portfolio/baiju.jpg" alt="">
+                                <font color="white"><b>Dr. Baiju M. Nair</b></font>
+                                <font color="#e6dabc"><i style="font-weight: normal;"><br>NPOL, Kochi</i></font>
+
+                                <span class="additional-info"  style="color: white; line-height: 0.8;"> <br> <a>Date : 27 January 2024</a></span>
+
+                                <div class="portfolio-info">
+                                    <h6  style="color: white;"> Scientist</h6>
+                                    Naval Physical & Oceanographic Laboratory, Kochi
+        <a class="preview" href="images/portfolio/baiju.jpg" rel="prettyPhoto" title="
+                                                                                                                   <div style='text-align: center;'>
+            <span style='color: green;'>Research Areas : Broadband Passive Sonar Signal Simulation 
+
+
+        </span>
+          </div>
+          <h3 style='text-align: center;'>Title: --</h3>
+          <br>
+        No Text
+
+
+
+        "><i class="fa fa-eye" src="images/portfolio/baiju.jpg" alt="Image Description" width="10" height="10"></i></a>
+                                </div>
+                            </div>
+                        </div><!--/.portfolio-item-->
+
+
+
+        <div class="portfolio-item designing upcoming">
+                            <div class="portfolio-item-inner">
+                                <img class="img-responsive" src="images/portfolio/niloy.png" alt="">
+                                <font color="white"><b>Dr. Niloy Ganguly</b></font>
+                                <font color="#e6dabc"><i style="font-weight: normal;"><br>IIT Kharagpur</i></font>
+
+                                <span class="additional-info"  style="color: white; line-height: 0.8;"> <br> <a>Date : 25 November 2023</a></span>
+
+                                <div class="portfolio-info">
+                                    <h6  style="color: white;"> Professor in Computer Science and Engineering</h6>
+                                    IIT Kharagpur
+        <a class="preview" href="images/portfolio/niloy.png" rel="prettyPhoto" title="
+                                                                                                                   <div style='text-align: center;'>
+            <span style='color: green;'>Research Areas :  Network Theory, machine learning.
+
+
+        </span>
+          </div>
+          <h3 style='text-align: center;'>Title: --</h3>
+          <br>
+        No Text
+
+
+
+        "><i class="fa fa-eye" src="images/portfolio/niloy.png" alt="Image Description" width="10" height="10"></i></a>
+                                </div>
+                            </div>
+                        </div><!--/.portfolio-item-->
+
+
+
+
+
+
+                <div class="portfolio-item designing upcoming">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
                         <font color="white"><b>Dr. Pratiti Bhadra</b></font>
@@ -205,7 +349,7 @@ No Text
 
 
 
-<div class="portfolio-item designing">
+<div class="portfolio-item designing previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
                         <font color="white"><b>Dr. Debanand Singdeo</b></font>
@@ -240,7 +384,7 @@ No Text
 
 
 
-<div class="portfolio-item designing">
+<div class="portfolio-item designing previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/ckn.jpg" alt="">
                         <font color="white"><b>Prof. Narayanan (CK) C Krishnan</b></font>
@@ -272,7 +416,7 @@ Popular few-shot Meta-learning (ML) methods presume that a task's support and qu
 
 
 
-<div class="portfolio-item designing">
+<div class="portfolio-item designing previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
                         <font color="white"><b>Dr. Divya Padmanabhan</b></font>
@@ -303,7 +447,7 @@ We propose a distributionally robust model for the influence maximization proble
 
 
 
-<div class="portfolio-item designing">
+<div class="portfolio-item designing previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
                         <font color="white"><b>Dr. Adway Mitra</b></font>
@@ -338,7 +482,7 @@ Discussion on some of the important questions regarding climate, particularly in
 
 
 
-<div class="portfolio-item mobile">
+<div class="portfolio-item mobile previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/satyajit.jpg" alt="">
                         <font color="white"><b>Dr. Satyajit Das</b></font>
@@ -371,7 +515,7 @@ CGRAs, custom processors, multi-cores, high-level synthesis, and compilers
 
 
 
-<div class="portfolio-item mobile">
+<div class="portfolio-item mobile previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
                         <font color="white"><b>Prof. Balaraman Ravindran</b></font>
@@ -401,7 +545,7 @@ CGRAs, custom processors, multi-cores, high-level synthesis, and compilers
                  
 
                
-<div class="portfolio-item mobile">
+<div class="portfolio-item mobile previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
                         <font color="white"><b>Dr. Naresh Manwani</b></font>
@@ -433,7 +577,7 @@ CGRAs, custom processors, multi-cores, high-level synthesis, and compilers
 
 
 
-                <div class="portfolio-item mobile">
+                <div class="portfolio-item mobile previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
                         <font color="white"><b>Mr. Girish Palshikar</b></font>
@@ -461,7 +605,7 @@ CGRAs, custom processors, multi-cores, high-level synthesis, and compilers
 
 
 
-                <div class="portfolio-item mobile">
+                <div class="portfolio-item mobile previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/09.jpg" alt="">
                         <font color="white"><b>Prof. Chiranjib Bhattacharyya</b></font>
@@ -489,7 +633,7 @@ CGRAs, custom processors, multi-cores, high-level synthesis, and compilers
                 </div><!--/.portfolio-item-->
 
 
-                <div class="portfolio-item mobile">
+                <div class="portfolio-item mobile previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/prashant.jpg" alt="">
                         <font color="white"><b>Mr. Prashant Rao</b></font>
@@ -518,7 +662,7 @@ MathWorks, India
 
 
 
-                                <div class="portfolio-item mobile">
+                                <div class="portfolio-item mobile previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/rajesh.jpg" alt="">
                         <font color="white"><b>Prof. Rajesh Sundaresan</b></font>
@@ -547,7 +691,7 @@ MathWorks, India
 
 
 
-                    <div class="portfolio-item mobile">
+                    <div class="portfolio-item mobile previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/ashish.jpg" alt="">
                         <font color="white"><b>Prof. Ashish Ghosh</b></font>
@@ -575,7 +719,7 @@ MathWorks, India
                 </div><!--/.portfolio-item-->
 
 
-                <div class="portfolio-item  development">
+                <div class="portfolio-item  development previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
                         <font color="white"><b>Mr. Siddhartha Mukherjee</b></font>
@@ -601,7 +745,7 @@ MathWorks, India
 
 
 
-                                <div class="portfolio-item  development">
+                                <div class="portfolio-item  development previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/sriparna.jpg" alt="">
                         <font color="white"><b>Prof. Sriparna Saha</b></font>
@@ -628,7 +772,7 @@ MathWorks, India
 
 
 
-                                <div class="portfolio-item  development">
+                                <div class="portfolio-item  development previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/sambaran.jpg" alt="">
                         <font color="white"><b>Dr. Sambaran Bandyopadhyay</b></font>
@@ -653,7 +797,7 @@ MathWorks, India
 
 
 
-               <div class="portfolio-item  development">
+               <div class="portfolio-item  development previous">
                     <div class="portfolio-item-inner">
                         <img class="img-responsive" src="images/portfolio/vineeth.jpg" alt="">
                         <font color="white"><b>Dr. Vineeth N Balasubramanian</b></font>
